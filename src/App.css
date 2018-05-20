@@ -1,0 +1,384 @@
+    *{
+        padding: 0;
+        margin:0;
+        color: rgb(8, 8, 8);    
+        font-family: 'Raleway', sans-serif;    
+    }
+    body{
+        overflow: hidden;
+    }
+    .rating > span:hover:before {
+        content: "\2605";
+        position: absolute;
+     }
+     .rating {
+       unicode-bidi: bidi-override;
+       direction: rtl;
+       font-size: 3em;
+     }
+     .rating > span {
+       display: inline-block;
+       position: relative;
+       width: 1.1em;
+     }
+     .rating > span:hover:before,
+     .rating > span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+     }
+    h1{
+        letter-spacing: 5px;
+        transform: rotate(-90deg);
+        top: 10rem;
+        margin-left: -8rem;
+        font-size: 0.5em;
+        position: fixed;
+        /* cursor: pointer; */
+    }
+    li{
+        list-style: none;
+    }
+    .mainPage {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-aria {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        left: 5;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: #03A9F4;
+        width: 28%;
+        padding: 2em;  
+      
+    }
+    /* Bugg: why i have to use margin-left? why doesnt it work
+    with float right
+    */
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        margin-left: 31%;
+        margin-right: 0.5%;
+        justify-content: flex-end;
+        background-color: #FFFFFF;
+        width: 72%;
+        height: 100vh;
+        overflow-x: hidden;
+        /* height: 1500px; */
+    }
+    .mainSec{
+        display: flex;
+        margin-left: 1.5em;
+        height: 100%;
+        width: 98%;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        overflow-x: hidden;
+        flex-basis: auto;
+        /* height: 100vh;       */
+        /* align-items: center;
+        align-self: center; */
+    }
+ 
+   .top, .bottom{
+        height: 50vh; 
+        /* border: 1px solid red; */
+    }
+    .top{
+        height: 40vh;
+        display: flex;
+        align-items: flex-end; 
+    }
+    .bottom {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid red;  */
+    }
+    .aboutMe{
+        display: flex;
+        /* border: 1px dotted grey; */
+        height: 70%;
+        width: 100%;
+        align-items: flex-end;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        /* cursor: pointer; */
+    }
+    .list{
+        display: flex;
+        height: 30%;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-family: 0.5em;
+    }
+    .liststyle > li {
+        cursor: pointer;
+        color: white;
+    }
+    .liststyle > li:hover {
+        background-color: rgb(62, 37, 153);
+    }
+    
+
+    .border{
+        border: 1px solid red;
+    }
+    .skills, .video, .projects{
+      height: 33.3%;
+      display: flex; 
+    }
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    .projects{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .skills > li {
+        width: 45%;
+        height: 90%;
+    }
+    .video > li{
+        width: 40%;
+    }
+    .projects > li {
+        width: 33%;
+        height: 90%;
+    }
+    .skillsLi{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .skillsLi > li{
+        border: 1px solid rgb(161, 156, 156);
+        width: 40%;
+    }
+    .box-sm{
+        /* border: 1px solid grey; */
+        height: 80%;
+    }
+
+    .box-lg{
+        width: 100%;
+        border: 1px solid red;
+        transition: ease all .5s;
+    }
+    .sm {
+        width: 32%; 
+        height: 30vh;
+        background-color: #E1F5FE ;
+        transition: ease all 1s;
+        border-radius: 2px;
+        flex-basis: auto;
+    }
+
+    .sm:hover{
+        -ms-transform: scale(0.95); /* IE 9 */
+        -webkit-transform: scale(0.95); /* Safari 3-8 */
+        transform: scale(0.95); 
+        cursor: pointer;
+    }
+    .sm-noScale:hover{
+        transform: scale(1);
+        
+    }
+    .flex-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+ 
+
+    li{
+        margin-top: 1em;
+    }
+    h2{ 
+        display: inline;
+        font-family: 0.5em;
+   }
+
+    h1 {
+        font-size: 2.5em;
+        padding-bottom: 1rem;
+    }
+    .weather{
+        border-radius: 2px;
+        display: inline-block;
+        height: 300px;
+        margin: 1rem;
+        position: relative;
+        width: 300px;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .wReport{
+        height: 50px;
+        width: 50%;
+        max-height: 5rem;
+    }
+    .wView{
+        height: 100;
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+    .cityName{
+        width: 100%;
+        top:0;
+        align-self: center;
+        text-align: center;
+    }
+    .liststyle > li > img{
+        display: none;
+  }
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: black; /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1rem;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  .sm:hover .overlay {
+    opacity: 1;
+  }
+/* MediaQuery goes here */
+/* 1em/1rem === 16px */
+
+/* 90 rem = 1280px; screen < then 1280 px */
+
+@media screen and (max-width: 1365px){
+    h1{
+        font-size: 1.8em;
+    }
+
+
+}
+
+
+@media screen and (max-width: 992px) {
+        h1{
+            font-size: 1.8em;
+        }
+        .aboutMe > h4 {
+            font-size: 0.8em;
+        }
+        .sm {
+            width: 49%;             
+        }
+        .mainSec{
+            justify-content: center;
+        }
+    }
+/* 61 rem = 976px; screen < then 1280 px */
+    @media screen and (max-width: 61em) {
+        .mainPage {
+            flex-wrap: wrap;
+        }
+        .aboutMe{
+            display: none; 
+
+        }
+        .menu-aria{
+            width: 20%;
+            flex-wrap: wrap;
+        }
+        .main{
+            width: 80%;
+            margin-left: 25%;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+        }
+        .sm {
+            width: 50%; 
+            
+        }
+
+        .skills > li {
+            /* width: 100%; */
+            /* height: auto; */
+        }
+
+
+    }
+/* 40 rem = 640px screen; < then 640 px */
+    @media screen and (max-width: 40em) {
+        .sm {
+            width: 90%;       
+    }
+    .menu-aria{
+        width: 5%;
+    }
+    .main{
+        width: 80%;
+        margin-left: 15%;
+    }
+    .contact, .aboutme {
+        display: none;
+    }
+    .liststyle{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        margin-top: 5rem;
+        }
+    .list{
+        position: absolute;
+        justify-content: flex-start;        
+    }
+   .liststyle > li > img{
+       margin-top: 1rem;
+       display: block;
+       background-color: transparent;
+ }
+ .liststyle > li:hover {
+    background-color: transparent;
+ }
+
+
+ .aboutMe{
+     display: none;
+ }
+    
+
+}
+
